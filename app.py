@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+import uvicorn
 
 app = FastAPI()
 
@@ -13,3 +14,5 @@ def read_test_route():
 @app.get("/route2")
 def read_route():
     return "Hello world"
+
+uvicorn.run(app, host="0.0.0.0", port=8080)
