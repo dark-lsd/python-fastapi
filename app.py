@@ -9,3 +9,7 @@ def read_root():
 @app.get("/test_route")
 def read_test_route():
     return {"Hello": "Test Route"}
+
+@app.get("/route2")
+def read_route():
+    return "Hello world"
