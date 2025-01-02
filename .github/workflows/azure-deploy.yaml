@@ -30,6 +30,6 @@ jobs:
       - name: Deploying
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'campus-connect-plus-plus-backend'
+          app-name: 'test-fastapi'
           publish-profile: ${{ secrets.AZURE_PYTHON_PROFILE }}
           package: '.'
