@@ -28,7 +28,7 @@ jobs:
         run: echo "Publishing..."
 
       - name: Deploying
-        uses: actions/webapps-deploy@v2
+        uses: azure/webapps-deploy@v2
         with:
           app-name: 'campus-connect-plus-plus-backend'
           pulish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
