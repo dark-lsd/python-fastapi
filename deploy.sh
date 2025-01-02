@@ -44,7 +44,7 @@ WORKERS=\$((\$(nproc) * 2 + 1))
 
 # Start Gunicorn with FastAPI application
 cd "$DEPLOYMENT_TARGET"
-gunicorn main:app --workers \$WORKERS --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --timeout 600 --access-logfile '-' --error-logfile '-'
+gunicorn app:app --workers \$WORKERS --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --timeout 600 --access-logfile '-' --error-logfile '-'
 EOF
 
 # Make startup script executable
