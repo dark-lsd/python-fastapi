@@ -1,2 +1,2 @@
 fastapi>=0.95.0
-gunicorn==23.0.0
+uvicorn==0.34.0
