@@ -10,3 +10,6 @@ def index():
 @app.get("/test")
 def test():
     return "Test"
+
+
+app.run(host="0.0.0.0", port=8080)
