@@ -21,11 +21,11 @@ jobs:
           python -m venv antenv/
           source ./antenv/bin/activate
           pip3 install --upgrade pip
-          # python -m pip install fastapi uvicorn gunicorn
+          pip3 install -r requirements.txt
           echo "uvicorn version is::"
           uvicorn --version
           pip3 list
-          pip3 install -r requirements.txt
+          # python -m pip install fastapi uvicorn gunicorn
           
       - name: publish
         run: echo "Publishing..."
