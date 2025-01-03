@@ -11,7 +11,7 @@ def test():
     return "Test"
 
 @app.get("/test/{hii}")
-def test1():
+def test1(hii: str):
     return {"param": hii}
 
 # app.run(host="0.0.0.0", port=8000)
