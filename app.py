@@ -1,6 +1,6 @@
-from flask import Flask
+from fastapi import FastAPI
 
-app = Flask(__name__)
+app = FastAPI()
 
 @app.get("/")
 def index():
@@ -14,4 +14,4 @@ def test():
 def test1():
     return {"param": hii}
 
-app.run(host="0.0.0.0", port=8000)
+# app.run(host="0.0.0.0", port=8000)
